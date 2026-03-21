@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload Video</title>
+
+<style>
+body{
+    font-family: Arial;
+    background:#f5f5f5;
+    margin:0;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 20px;
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    color:red;
+    font-weight:bold;
+}
+
+.upload-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+/* Form */
+.container{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.form-box{
+    background:white;
+    padding:30px;
+    width:500px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align:center;
+}
+
+.input-box{
+    margin-top:15px;
+}
+
+.input-box input,
+.input-box textarea,
+.input-box select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+.upload-area{
+    border:2px dashed #ccc;
+    padding:40px;
+    text-align:center;
+    margin-top:10px;
+}
+
+.buttons{
+    margin-top:20px;
+    display:flex;
+    gap:10px;
+}
+
+.btn-upload{
+    background:red;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:20px;
+    flex:1;
+}
+
+.btn-cancel{
+    padding:10px;
+    border-radius:20px;
+    border:1px solid #ccc;
+    flex:1;
+}
+
+/* Footer */
+.footer{
+    text-align:center;
+    margin-top:50px;
+    padding:20px;
+    background:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">▶ FlaskTube</div>
+    <button class="upload-btn">+ Upload</button>
+</div>
+
+<div class="container">
+    <div class="form-box">
+
+        <h2>Upload Video Mới</h2>
+
+        <div class="input-box">
+            <label>File Video *</label>
+            <div class="upload-area">
+                &lt;video&gt;<br>
+                Kéo thả hoặc chọn file
+            </div>
+        </div>
+
+        <div class="input-box">
+            <label>Tiêu đề *</label>
+            <input placeholder="Nhập tiêu đề video...">
+        </div>
+
+        <div class="input-box">
+            <label>Mô tả</label>
+            <textarea placeholder="Mô tả video..."></textarea>
+        </div>
+
+        <div class="input-box">
+            <label>Thể loại *</label>
+            <select>
+                <option>Giáo dục</option>
+                <option>Giải trí</option>
+                <option>Công nghệ</option>
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label>Thumbnail</label>
+            <div class="upload-area">
+                &lt;img&gt;<br>
+                Chọn ảnh thumbnail
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn-upload">Upload Video</button>
+            <button class="btn-cancel">Hủy</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    FlaskTube © 2024
+</div>
+
+</body>
+</html>
