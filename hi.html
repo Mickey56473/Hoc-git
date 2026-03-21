@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FlaskTube</title>
+
+<style>
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f5f5f5;
+}
+
+/* Thanh trên */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    color:red;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.search{
+    width:40%;
+    padding:8px;
+}
+
+/* Layout chính */
+.container{
+    display:flex;
+    padding:20px;
+}
+
+/* Video chính */
+.main-video{
+    width:70%;
+}
+
+.video-box{
+    background:black;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:30px;
+}
+
+/* Video liên quan */
+.sidebar{
+    width:30%;
+    padding-left:20px;
+}
+
+.related-video{
+    display:flex;
+    margin-bottom:15px;
+}
+
+.related-video img{
+    width:120px;
+    height:70px;
+    margin-right:10px;
+}
+
+/* Bình luận */
+.comments{
+    margin-top:20px;
+    background:white;
+    padding:15px;
+}
+
+.comment-input{
+    width:100%;
+    padding:10px;
+}
+
+.comment-btn{
+    margin-top:10px;
+    padding:10px;
+    width:100%;
+    background:red;
+    color:white;
+    border:none;
+}
+
+/* Footer */
+.footer{
+    text-align:center;
+    padding:20px;
+    background:white;
+    margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Thanh trên -->
+<div class="navbar">
+    <div class="logo">▶ FlaskTube</div>
+    <input class="search" placeholder="Tìm kiếm video...">
+    <button>Upload</button>
+</div>
+
+<!-- Nội dung -->
+<div class="container">
+
+    <!-- Video chính -->
+    <div class="main-video">
+
+        <div class="video-box">
+            &lt;video&gt;
+        </div>
+
+        <h2>AI City</h2>
+        <p>3 lượt xem • 7 giờ trước</p>
+
+        <div class="comments">
+            <h3>Bình luận</h3>
+            <input class="comment-input" placeholder="Thêm bình luận...">
+            <button class="comment-btn">Đăng bình luận</button>
+        </div>
+
+    </div>
+
+    <!-- Video liên quan -->
+    <div class="sidebar">
+
+        <h3>Video Liên Quan</h3>
+
+        <div class="related-video">
+            <img src="thumbnail1.jpg">
+            <div>
+                <b>Review iPhone</b>
+                <p>32k lượt xem</p>
+            </div>
+        </div>
+
+        <div class="related-video">
+            <img src="thumbnail2.jpg">
+            <div>
+                <b>Review Macbook</b>
+                <p>3.6k lượt xem</p>
+            </div>
+        </div>
+
+        <div class="related-video">
+            <img src="thumbnail3.jpg">
+            <div>
+                <b>Video khác</b>
+                <p>2 lượt xem</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>FlaskTube</p>
+    <p>© 2024 FlaskTube — Xây dựng bằng Python Flask</p>
+</div>
+
+</body>
+</html>
