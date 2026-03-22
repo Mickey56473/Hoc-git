@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FlaskTube</title>
+
+<style>
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f5f5f5;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    color:red;
+    font-weight:bold;
+}
+
+.search{
+    width:40%;
+    padding:8px;
+    border-radius:20px;
+    border:1px solid #ccc;
+}
+
+.auth button{
+    margin-left:10px;
+    padding:6px 12px;
+    border-radius:20px;
+    border:none;
+}
+
+.signup{
+    background:red;
+    color:white;
+}
+
+/* Category */
+.categories{
+    display:flex;
+    gap:10px;
+    padding:15px;
+    background:white;
+    overflow-x:auto;
+}
+
+.category{
+    padding:6px 12px;
+    background:#eee;
+    border-radius:20px;
+    white-space:nowrap;
+}
+
+/* Grid video */
+.container{
+    padding:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:10px;
+}
+
+.title{
+    font-weight:bold;
+}
+
+.meta{
+    font-size:12px;
+    color:gray;
+}
+
+/* Footer */
+.footer{
+    text-align:center;
+    padding:20px;
+    background:white;
+    margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">▶ FlaskTube</div>
+    <input class="search" placeholder="Tìm kiếm video...">
+
+    <div class="auth">
+        <button>Đăng nhập</button>
+        <button class="signup">Đăng ký</button>
+    </div>
+</div>
+
+<!-- Categories -->
+<div class="categories">
+    <div class="category">Tất cả</div>
+    <div class="category">Giáo dục</div>
+    <div class="category">Giải trí</div>
+    <div class="category">Công nghệ</div>
+    <div class="category">Âm nhạc</div>
+    <div class="category">Thể thao</div>
+    <div class="category">Du lịch</div>
+    <div class="category">Ẩm thực</div>
+</div>
+
+<!-- Video Grid -->
+<div class="container">
+    <div class="grid">
+
+        <!-- Card -->
+        <div class="card">
+            <img src="img1.jpg">
+            <div class="card-content">
+                <div class="title">Wonders of Los Angeles</div>
+                <div class="meta">Trip Insight • 598K lượt xem • 11 tháng trước</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img2.jpg">
+            <div class="card-content">
+                <div class="title">How to practice effectively</div>
+                <div class="meta">TED-ed • 2 lượt xem • 1 tuần trước</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img3.jpg">
+            <div class="card-content">
+                <div class="title">Why should you read Don Quixote?</div>
+                <div class="meta">TED-ed • 10M lượt xem • 3 năm trước</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img4.jpg">
+            <div class="card-content">
+                <div class="title">World Cup 2018 best goal: Benjamin Pavard</div>
+                <div class="meta">1M lượt xem • 1 tháng trước</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img5.jpg">
+            <div class="card-content">
+                <div class="title">Learn Python in less than 10 minutes</div>
+                <div class="meta">300K lượt xem • 1 tháng trước</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img6.jpg">
+            <div class="card-content">
+                <div class="title">Macbook NEO Review</div>
+                <div class="meta">3.6K lượt xem • 2 tháng trước</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img7.jpg">
+            <div class="card-content">
+                <div class="title">The problem at Man United</div>
+                <div class="meta">374K lượt xem • 1 tháng trước</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img8.jpg">
+            <div class="card-content">
+                <div class="title">City of stars - La La Land OST</div>
+                <div class="meta">33M lượt xem • 9 tháng trước</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img9.jpg">
+            <div class="card-content">
+                <div class="title">The physique of an athlete</div>
+                <div class="meta">298K lượt xem • 2 tháng trước</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>▶ FlaskTube</p>
+    <p>© 2026 FlaskTube</p>
+</div>
+
+</body>
+</html>
